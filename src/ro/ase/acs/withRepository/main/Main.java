@@ -17,7 +17,6 @@ public class Main {
             repository.insertData(connection, new Employee(1, "Popescu Ion", "Bucharest", 4000));
             repository.insertData(connection, new Employee(2, "Ionescu Maria", "Bucharest", 5000));
             repository.insertData(connection, new Employee(3, "Vasilescu Vasile", "Bucharest", 6000));
-
             List<Employee> employees = repository.readData(connection);
             for (Employee employee : employees) {
                 System.out.println(employee);
