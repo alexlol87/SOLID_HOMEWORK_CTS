@@ -37,7 +37,6 @@ public class SQLiteEmployeeRepository implements EmployeeRepository {
         return employees;
     }
 
-
     @Override
     public void insertData(Connection connection, Employee employee) throws SQLException {
         String sqlInsertWithParams = "INSERT INTO employees VALUES (?,?,?,?)";
